@@ -1,0 +1,119 @@
+.main {
+    display: flex;
+    align-items: stretch;
+    gap: 4px;
+    padding: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container_capsule {
+    width: 200px;
+    min-width: 300px;
+    border-radius: 13px;
+    border: 2px solid lightcoral;
+    padding: 14px;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container_capsule .container_name {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+.container_capsule .container_name h2 {
+    margin: 4px 0px;
+    border-top: 4px solid lightblue;
+    border-bottom: 4px solid lightblue;
+}    
+.container_capsule .container_name b {
+    text-align: left;
+}
+.container_capsule .lists {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 150px;
+    overflow: auto;
+}
+.container_capsule .lists .capsule {
+    list-style: none;
+    background: grey;
+    padding: 4px;
+    color: #1e1e1e;
+    font-weight: 900;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+.container_capsule .list .capsule:hover {
+    border-radius: 10px;
+}
+.deleteContainerForm {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.deleteContainerForm .hidden {
+    display: none;
+}
+.deleteContainerForm .delBtn {
+    background: none;
+    color: white;
+    padding: 5px;
+    border: 4px solid lightcoral;
+    border-radius: 23px;
+}
+#hidden_form {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #3c2323bf;
+    z-index: 1;
+}
+#hidden_form .center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hidden_form .center form {
+    background: #1e1e1ed9;
+    padding: 16px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    border: 6px solid;
+    border-radius: 13px;
+}
+#hidden_form .center form input {
+    padding: 8px;
+    border-radius: 7px;
+    border: 2px solid white;
+}
+#hidden_form .center form input[type=submit] {
+    background: lightblue;
+}
+#hidden_form .center form input[type=button] {
+    background: lightcoral;
+}
+.floating_bottom_left_button {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 15px;
+    background: none;
+    color: rgb(124 138 255);
+    border: 5px solid white;
+    border-radius: 14px;
+}

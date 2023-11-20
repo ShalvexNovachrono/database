@@ -1,0 +1,37 @@
+body {
+    background: #3a404e;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px 10px;
+}
+
+.main .container {
+    background: #3a404e;
+    border-radius: 6px;
+    padding: 14px;
+    border: 2px solid #008589;
+}
+
+.main .container h1 {
+    margin: 0px;
+}
+
+.main .container .sub-container {
+    background: #143f5e;
+    border-radius: 6px;
+    padding: 14px;
+    margin: 8px 0px;
+    overflow-x: auto;
+}
+
+.main .container .sub-container h2 {
+    margin: 0px;
+}
+
+.main a {
+    color: rgb(124 138 255);
+}

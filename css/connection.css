@@ -1,0 +1,101 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    background: #0009;
+    gap: 5px;
+    border-radius: 4px;
+}
+
+.w0 {
+    border: 2px solid rgb(245, 25, 25);
+}
+
+.w1 {
+    border: 2px solid rgb(0, 255, 64);
+}
+
+.main .connection .details {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 18px #fff7;
+    padding: 4px;
+}
+
+.main .connection .details .url {
+    padding: 4px;
+    background: #1e1e1e;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.main .connection .details .date {
+    padding: 4px;
+    background: #1e1e1e;
+    border-radius: 4px;
+}
+
+.main .connection .btn-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    color: #fff;
+}
+
+.main .connection .btn-menu a .btn {
+    padding: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #1e1e1e;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 1px 1px 18px #fff7;
+}
+
+.btn-w0 {
+    color: rgb(0, 255, 64) !important;
+}
+
+.btn-w1 {
+    color: rgb(245, 25, 25) !important;
+}
+
+.main .connection .btn-menu a .delete {
+    padding: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #1e1e1e;
+    border: none;
+    border-radius: 4px;
+    color: rgb(248, 45, 45);
+    text-shadow: 1px 1px 18px #fff7;
+}
+
+.error {
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0px auto;
+    background: #000000;
+    padding: 4px;
+    text-align: center;
+}

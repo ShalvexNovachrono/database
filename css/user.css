@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+}
+
+.main {
+    width: 350px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #000000d9;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 13px;
+    gap: 8px;
+}
+
+.main .error {
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 19px 0px 0px 0px;
+    background: #1e1e1e;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.main form .form-title {
+    background: #1e1e1e;
+    padding: 4px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 6px #fff;
+}
+
+.main form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.main form .form-group label {
+    font-size: 17px;
+}
+
+.main form .form-group input {
+    color: #fff;
+    height: 41px;
+    background: rgba(255,255,255,0.10);
+    border: 2px;
+    border-radius: 4.5px;
+    outline: none;
+    padding: 1px 13px;
+}
+
+.main form .form-group .submit {
+    background: rgba(255,255,255,0.60);
+    font-size: 15px;
+}
+
+.delete-btn {
+    width: 100%;
+    height: 50px;
+}
+
+.delete-btn a .btn {
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    font-weight: bold;
+    color: red;
+    border-radius: 8px;
+}

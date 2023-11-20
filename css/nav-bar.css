@@ -1,0 +1,109 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.29);
+    display: flex;
+    flex-direction: row;
+    padding: 2px 14px 0px 14px;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    margin: 7px auto 7px 0px;
+}
+
+.logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: rgb(124 138 255);
+    text-shadow: 1px 1px 17px #fff7;
+}
+
+.logo a img {
+    width: 32px;
+    height: 32px;
+}
+
+.logo a .title {
+    font-weight: bold;
+}
+
+.directory-open {
+    display: block;
+    font-size: 19px;
+    margin: 13.5px 2px 13.5px 2px;
+}
+
+.directory-collapsed {
+    display: none;
+    font-size: 19px;
+    margin: 7px 0px 7px auto;
+}
+
+
+@media screen and (max-width: 650px) {
+    .directory-open {
+        display: none !important;
+    }
+    .directory-collapsed {
+        display: block !important;
+    }
+}
+
+.directory-open a {
+    text-decoration: none;
+    color: rgb(124 138 255);
+    margin: 10px;
+    padding: 4px;
+}
+
+.directory-open a:hover {
+    color: whitesmoke;
+    background: #000;
+}
+
+.directory-collapsed .btn {
+    width: auto;
+    height: auto;
+}
+
+.directory-collapsed .btn img {
+    width: 32px;
+    height: 32px;
+}
+
+.directory-collapsed .dropdown {
+    display: none;
+}
+
+.directory-collapsed .dropdown .directory-drop-down {
+    display: flex;
+    position: absolute;
+    right: 8px;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.936);
+    border-radius: 8.5px 0px 8.5px 8.5px;
+    z-index: 1;
+}
+
+.directory-collapsed .dropdown .directory-drop-down a {
+    text-decoration: none;
+    color: rgb(124 138 255);
+    padding: 4px;
+}
+
+.directory-collapsed .dropdown .directory-drop-down a:hover {
+    color: whitesmoke;
+    background: #000;
+}
+
+.btn:hover + .dropdown {
+    display: block !important;
+}
+
+.dropdown:hover {
+    display: block !important;
+}
